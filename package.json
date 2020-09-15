@@ -37,6 +37,7 @@
     "helmet": "^3.12.0",
     "jsonwebtoken": "^8.2.1",
     "sequelize": "^6.0.0",
+    "solr-client": "^0.7.1",
     "sqlite3": "^4.0.0"
   },
   "devDependencies": {

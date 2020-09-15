@@ -3,6 +3,11 @@ const authService = require('../services/auth.service');
 const bcryptService = require('../services/bcrypt.service');
 
 const UserController = () => {
+
+  const test = async (req, res) => {
+    return res.status(200).json({ label: 'hello world!' });
+  }
+
   const register = async (req, res) => {
     const { body } = req;
 
@@ -85,6 +90,7 @@ const UserController = () => {
     login,
     validate,
     getAll,
+    test,
   };
 };
 
