@@ -2,12 +2,13 @@ const solrService = require('../services/solr.service');
 
 const GithubController = () => {
 
-  const getSummary = async (req, res) => {
-    return solrService().getSummary()
+  const getGithubSummary = async (req, res) => {
+    const summary = await solrService().getGithubSummary()
+    return res.status(200).json(summary);
   }
 
   return {
-    getSummary,
+    getGithubSummary,
   };
 };
 

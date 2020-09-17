@@ -23,14 +23,14 @@ const githubService = () => {
                         }).catch((error) => {});
     }
 
-    const getSummary = async () => {
+    const getGithubSummary = async () => {
         console.log("GET SUMMARY");
         let res = await search('*:*', 0, 100);
         return res.response.docs;
     }
 
   return {
-    getSummary,
+    getGithubSummary,
   };
 };
 
