@@ -4,7 +4,8 @@ const publicRoutes = {
   'POST /login': 'UserController.login',
   'POST /validate': 'UserController.validate',
   'GET /test': 'UserController.test',
-  'GET /github/summary': 'GithubController.getGithubSummary'
+  'GET /github/summary': 'GithubController.getGithubSummary',
+  'GET /okrs': 'OkrsController.get'
 };
 
 module.exports = publicRoutes;

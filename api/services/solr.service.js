@@ -24,7 +24,6 @@ const githubService = () => {
     }
 
     const getGithubSummary = async () => {
-        console.log("GET SUMMARY");
         let res = await search('*:*', 0, 100);
         return res.response.docs;
     }
